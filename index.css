@@ -63,18 +63,6 @@ html, body {
   margin-right: 10px;
   margin-top: 15px;
 }
-/* Responsive */
-@media (max-width: 768px) {
-  .hero-heading {
-    font-size: 20px;
-  }
-  .hero-name {
-    font-size: 28px;
-  }
-  .profile-image {
-    width: 120px;
-  }
-}
 
 @keyframes slideFromLeft {
     0% { opacity: 0; transform: translateX(-100px); }
