@@ -20,52 +20,77 @@
   <link rel="stylesheet" href="index.css" />
 </head>
 <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark custom-navbar p-3">
+    <a class="navbar-brand" href="#">SRC</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarNav" aria-controls="navbarNav" 
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#feedback">Feedback</a>
+      </div>
+    </div>
+  </nav>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-md navbar-dark custom-navbar p-5">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
-          <a class="nav-link active" href="#">
-            Home
-            <span class="sr-only">(current)</span>
-          </a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  <!-- Hero Section -->
+  <main>
+    <section id="home" class = "hero-section1">
+      <div class = "container-fluid">
+        <div class = "row align-items-center">
+          <div class = "col-12 d-md-none animate-left">
+            <img src="siva-removebg-preview-modified.png" 
+            alt="Siva Rama Chakradhar portrait" 
+            class="profile-image" />
+            <h1 class="hero-heading mt-3">
+              Hi 👋 I'm<br>
+              <span class="hero-name">Siva Rama Chakradhar</span>
+            </h1>
+            <p class="hero-description">
+              Aspiring Full Stack Developer | AIML Student |
+              Nxtwave Learner
+            </p>
+            <div class="hero-buttons">
+              <a href="https://github.com/SivaRamaChakradhar/" 
+                target="_blank" class="btn btn-primary">View GitHub</a>
+              <a href="mailto:your.email@example.com" class="btn btn-secondary">Contact Me</a>
+            </div>
+          </div>
+          <!-- desktop layout -->
+          <!-- Left Column: Profile Image -->
+          <div class="d-none d-md-block col-md-6 text-center mb-4 mb-md-0 animate-left">
+            <img src="siva-removebg-preview-modified.png" 
+              alt="Siva Rama Chakradhar portrait" 
+              class="profile-image img-fluid" />
+          </div>
+
+          <!-- Right Column: Text Content -->
+          <div class="d-none d-md-block col-md-6 text-center text-md-left align-items-center animate-right">
+              <h1 class="hero-heading">
+                  Hi 👋 I'm<br>
+                  <span class="hero-name">Siva Rama Chakradhar</span>
+              </h1>
+              <p class="hero-description">
+                Aspiring Full Stack Developer | AIML Student | Nxtwave Learner
+              </p>
+              <div class="hero-buttons">
+                <a href="https://github.com/SivaRamaChakradhar/" 
+                  target="_blank" class="btn btn-primary">View GitHub</a>
+                <a href="mailto:your.email@example.com" 
+                  class="btn btn-secondary">Contact Me
+                 </a>
+              </div>  
+          </div>
         </div>
       </div>
-    </nav>
-
-    <div class="container bg-container">
-        <!-- Mobile Layout -->
-        <div class="row">
-            <div class="col-sm-12 d-md-none text-center">
-                <img src="siva-removebg-preview-modified.png" class="image" alt="Siva's Profile Image" />
-                <h1>Hi <span class="wave">👋</span>, I'm Siva Rama Chakradhar</h1>
-                <p>Aspiring Full Stack Developer | AIML Student</p>
-                <div class="mt-4">
-                <a href="#projects" class="btn btn-primary mr-3">View Projects</a>
-                <a href="resume.pdf" class="btn btn-outline-light">Download Resume</a>
-                </div>
-            </div>
-
-            <!-- Desktop Layout -->
-            <div class="col-md-4 d-none d-md-flex justify-content-start align-items-start">
-                <img src="siva-removebg-preview-modified.png" class="image" alt="Siva's Profile Image" />
-            </div>
-            <div class="col-md-8 d-none d-md-flex flex-column justify-content-start">
-                <h1>Hi <span class="wave">👋</span>, I'm Siva Rama Chakradhar</h1>
-                <p>Aspiring Full Stack Developer | AIML Student</p>
-                <div class="mt-4">
-                  <a href="#projects" class="btn btn-primary mr-3">View Projects</a>
-                  <a href="resume.pdf" class="btn btn-outline-light">Download Resume</a>
-              </div>
-            </div>
-        </div>
-    </div>
+    </section>
+  </main>
 </body>
+
 </html>
